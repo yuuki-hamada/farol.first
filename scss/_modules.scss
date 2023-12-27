@@ -1,0 +1,42 @@
+@use 'variables'as *;
+
+.contents-container{
+    margin: 71px 3% 71px 3%;
+    //margin-top: 71px;
+    //margin-left: 3%;
+}
+.Form-Btn {
+    font-family: $sans;
+    display: inline-block;
+    margin-top: 2vw;
+    border-style: solid;
+    border-width: 3px;
+    border-color: $main-02;
+    height: auto;
+    width: 13%;
+    border-radius: 4px;
+    font-size: 24px;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    text-align: center;
+    background-color: $base-01;
+    color: $main-02;
+    transition: all 1s ease;
+    
+    &:hover{
+        position: relative;
+        top: 2px;
+        background-color: $main-02;
+        color: $base-01;
+    }
+  }
+  @media screen and (max-width: 599px) {
+    .Form-Btn {
+      margin-top: 24px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 160px;
+      font-size: 16px;
+    }
+  }
+

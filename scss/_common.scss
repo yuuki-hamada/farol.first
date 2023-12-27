@@ -1,0 +1,39 @@
+@use'variables'as *;
+
+body{
+    background-color: $base-01;
+}
+
+li{
+    font-family: $sans;
+    list-style: none;
+}
+
+h2{
+    font-family: $sans;
+    font-size: 56px;
+    color: $main-01;
+}
+@media screen and (max-width: 599px) {
+    h2{
+        font-family: $sans;
+        font-size: 40px;
+        color: $main-01;
+    }
+}
+
+h3{
+    font-family: $sans;
+    text-align: center;
+    font-size: 56px;
+    color: $main-01;
+}
+
+@media screen and (max-width: 599px) {
+    h3{
+        font-family: $sans;
+        text-align: center;
+        font-size: 40px;
+        color: $main-01;
+    }
+}
