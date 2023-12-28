@@ -52,7 +52,7 @@
 
     </main>
     <a href="#contact">
-    <button class="fixed_btn">お問合せは<br>こちら</button>
+    <button id="scrollButton" class="fixed_btn">お問合せは<br>こちら</button>
     </a>
     <section id="about" class="about section">
         <div class="contents-container">
@@ -139,16 +139,9 @@
             </ul>
             <div class="btn-more">
                 <a href="portfolio.html"><input type="submit" class="Form-Btn" value="and more">
-                </a>
-                
-            </div>
-            
-
-
+                </a>                
+            </div> 
         </div>
-
-        
-
     </section>
     <section id="contact" class="contact section">
         <div class="contents-container">
@@ -158,32 +151,60 @@
                 まずはお話をお伺いさせて頂ければと思います。<br>
                 下記フォームより分かる範囲でご記載ください。必須項目部分は必ずご記載頂けますと幸いです。<br>
             </p>
+            <form action="https://ssl.form-mailer.jp/fm/service/Forms/confirm" method="post" name="form1" enctype="multipart/form-data" accept-charset="UTF-8" class="Form">
+                <input type="hidden" name="key" value="1d639265807984">
+                <!-- <h1>お問合せフォーム</h1> -->
+                <!-- <p><span style="font-size: 18px;">制作のご依頼・ご相談などお気軽にお問合せください。<br>まずはお話をお伺いさせて頂ければと思います。<br>下記フォームより分かる範囲でご記載ください。必須項目部分は必ずご記載頂けますと幸いです。</span></p> -->
+        
+                <!-- name -->
+                <div class="Form-Item">
+                    <p class="Form-Item-Label">名前<span class="Form-Item-Label-Required">必須</span></p>
+                    <p><input name="field_7052698_sei" type="text" class="Form-Item-Input" placeholder="姓">
+                    <input name="field_7052698_mei" type="text" class="Form-Item-Input" placeholder="名">
+                    </p>
+                </div>  
+          
+                <!-- phone -->
+                <div class="Form-Item">
+                    <p class="Form-Item-Label">電話番号</p>
+                <p>
+                    <input name="field_7052696" type="text" class="Form-Item-Input" placeholder="">
+                </p>
+                </div>
+                
+          
+                <!-- email -->
+                <div class="Form-Item">
+                    <p class="Form-Item-Label">メールアドレス<span class="Form-Item-Label-Required">必須</span></p>
+                <p>
+                  <input name="field_7052700" type="text" class="Form-Item-Input" size="30" placeholder="">
+                  <br>
+                  <input name="field_7052700_mcon" type="text" class="Form-Item-Input" size="30" placeholder="確認用">
+                </p>
 
-            <div class="Form">
-                <div class="Form-Item">
-                  <p class="Form-Item-Label">会社名</p>
-                  <input type="text" class="Form-Item-Input" placeholder="例）株式会社令和">
                 </div>
+                
+          
+                <!-- textarea -->
                 <div class="Form-Item">
-                  <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
-                  <input type="text"  class="Form-Item-Input" placeholder="例）山田太郎">
-                </div>
-                <div class="Form-Item">
-                  <p class="Form-Item-Label">電話番号</p>
-                  <input type="text"  class="Form-Item-Input" placeholder="例）000-0000-0000">
-                </div>
-                <div class="Form-Item">
-                  <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
-                  <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
-                </div>
-                <div class="Form-Item">
-                  <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
-                  <textarea class="Form-Item-Textarea"></textarea>
-                </div>
-                <input type="submit" class="Form-Btn" value="送信する">
-              </div>
-        </div>
+                    <p class="Form-Item-Label">お問合せ内容<span class="Form-Item-Label-Required">必須</span></p>
+                    <p class="Form-Item-Label" style="font-weight: lighter;">
+                    <textarea name="field_7052703" class="Form-Item-Textarea" cols="100" rows="10" placeholder="法人でのお問い合わせの場合、会社名をご記載頂けますと幸いです。"></textarea>
+                    </p>
+                </div>             
+                  <input name="submit" type="submit" class="Form-Btn" value="確認画面へ">
+        
+                <p>
+                  <a href="https://www.form-mailer.jp/?utm_source=https://ssl.form-mailer.jp/fms/1d639265807984&utm_medium=ownedmedia&utm_campaign=powered-by-formmailer" target="_blank" id="powered">Powered by FormMailer.</a>
+                </p>
+          
+                <input type="hidden" name="code" value="utf8">
+              </form>
+            </div>
     </section>
+
+    
+  
     <footer>
         <div class="footer">
             <nav class="footer navigation">
@@ -197,6 +218,7 @@
             </nav>
             <p class="footer-logo">FAROL</p>
         </div>
+        
 
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
